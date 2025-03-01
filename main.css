@@ -1,0 +1,125 @@
+*{ /* reset geral */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    padding-top: 100px;
+    background-color: #e7e7e7;
+}
+
+header{
+    display: flex; /*elementos um ao lado do outro*/
+    align-items: center; /*para que eles fiquem centralizados na vertical*/
+    margin-bottom: 40px;
+}
+
+header img{
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 960px; /*o container vai ocupar 100% dos 960px de limite*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    justify-content: space-between; /*distribuir espaçamento entre os itens*/
+    margin-bottom: 56px;
+}
+
+form input{
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#nome-atividade{
+    width: 400px;
+}
+
+#nota-atividade{
+    width: 130px;
+}
+
+form button {
+    background-color: #009432;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.3s;
+    font-style: normal;
+    /* 🔥 SOLUÇÃO: Definir um tamanho fixo para o botão */
+    width: 180px; /* ou um valor adequado ao seu layout */
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #00ff55;
+    color: black;
+    font-style: italic;
+    font-variant-ligatures: no-common-ligatures; /* Evita pequenas alterações de espaçamento */
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td{
+    text-align: center;
+    padding: 16px 0;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+table td img{
+    height: 30px;
+}
+
+.situacao{
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.aprovado{
+    background-color: #009432;
+}
+
+.reprovado{
+    background-color: rgb(202, 0, 0);
+}
